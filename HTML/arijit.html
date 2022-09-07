@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/media.css">
+    <link rel="icon" href="../logo/spotify.png" type="image/x-icon">
+    <!-- <style>
+        .main::before {
+        background-image: url("artists/arjit_bg.png");
+        background-size: auto;
+        background-position:left;
+        }
+    </style> -->
+    <script defer src="../JS/arijit.js"></script>
+    <script src="https://kit.fontawesome.com/230240f2a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="menuSide">
+            <p>
+                <img src="../logo/logo.png" alt="Spotify">
+                <span class="webName">Spotify</span>
+            </p>
+            <h6 id="menuListActiveButton"><i class="bi bi-music-note-list"></i></h6>
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span>&#9835 &nbsp</span> Playlist</h4>
+                <h4><span>&#9835 &nbsp</span> Last Played</h4>
+                <h4><span>&#9835 &nbsp</span> Recommended</h4>
+            </div>
+            <div class="menuSong">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="../cover/zack/angel500x500.jpg" alt="">
+                    <h5>Angel<br>
+                        <div class="subtitle">Zack Knight</div>
+                    </h5>
+                    <i class="fa-solid playSong fa-3x fa-circle-play" id="0"></i>
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="../cover/zack/Bom-Diggy-500x500.jpg" alt="">
+                    <h5>Bom Diggy<br>
+                        <div class="subtitle">Zack Knight</div>
+                    </h5>
+                    <i class="fa-solid playSong fa-3x fa-circle-play" id="1"></i>
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="../cover/zack/Dheere-500x500.jpg" alt="">
+                    <h5>Dheere Dheere Se<br>
+                        <div class="subtitle">Zack Knight</div>
+                    </h5>
+                    <i class="fa-solid playSong fa-3x fa-circle-play" id="2"></i>
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="../cover/zack/Bom-Diggy-500x500.jpg" alt="">
+                    <h5>Bom Diggy<br>
+                        <div class="subtitle">Zack Knight</div>
+                    </h5>
+                    <i class="fa-solid playSong fa-3x fa-circle-play" id="3"></i>
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="../cover/zack/Bom-Diggy-500x500.jpg" alt="">
+                    <h5>Bom Diggy<br>
+                        <div class="subtitle">Zack Knight</div>
+                    </h5>
+                    <i class="fa-solid playSong fa-3x fa-circle-play" id="4"></i>
+                </li>
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="../cover/zack/Bom-Diggy-500x500.jpg" alt="">
+                    <h5>Bom Diggy<br>
+                        <div class="subtitle">Zack Knight</div>
+                    </h5>
+                    <i class="fa-solid playSong fa-3x fa-circle-play" id="5"></i>
+                </li>
+                <li class="songItem">
+                    <span>07</span>
+                    <img src="../cover/zack/Bom-Diggy-500x500.jpg" alt="">
+                    <h5>Bom Diggy<br>
+                        <div class="subtitle">Zack Knight</div>
+                    </h5>
+                    <i class="fa-solid playSong fa-3x fa-circle-play" id="6"></i>
+                </li>
+                <li class="songItem">
+                    <span>08</span>
+                    <img src="../cover/zack/Bom-Diggy-500x500.jpg" alt="">
+                    <h5>Bom Diggy<br>
+                        <div class="subtitle">Zack Knight</div>
+                    </h5>
+                    <i class="fa-solid playSong fa-3x fa-circle-play" id="7"></i>
+                </li>
+                <li class="songItem">
+                    <span>09</span>
+                    <img src="../cover/zack/Bom-Diggy-500x500.jpg" alt="">
+                    <h5>Bom Diggy<br>
+                        <div class="subtitle">Zack Knight</div>
+                    </h5>
+                    <i class="fa-solid playSong fa-3x fa-circle-play" id="8"></i>
+                </li>
+                <li class="songItem">
+                    <span>10</span>
+                    <img src="../cover/zack/Bom-Diggy-500x500.jpg" alt="">
+                    <h5>Bom Diggy<br>
+                        <div class="subtitle">Zack Knight</div>
+                    </h5>
+                    <i class="fa-solid playSong fa-3x fa-circle-play" id="9"></i>
+                </li>
+                <li class="songItem">
+                    <span>11</span>
+                    <img src="../cover/zack/Bom-Diggy-500x500.jpg" alt="">
+                    <h5>Bom Diggy<br>
+                        <div class="subtitle">Zack Knight</div>
+                    </h5>
+                    <i class="fa-solid playSong fa-3x fa-circle-play" id="10"></i>
+                </li>
+                <li class="songItem">
+                    <span>12</span>
+                    <img src="../cover/zack/Bom-Diggy-500x500.jpg" alt="">
+                    <h5>Bom Diggy<br>
+                        <div class="subtitle">Zack Knight</div>
+                    </h5>
+                    <i class="fa-solid playSong fa-3x fa-circle-play" id="11"></i>
+                </li>
+                <li class="songItem">
+                    <span>13</span>
+                    <img src="../cover/zack/Bom-Diggy-500x500.jpg" alt="">
+                    <h5>Bom Diggy<br>
+                        <div class="subtitle">Zack Knight</div>
+                    </h5>
+                    <i class="fa-solid playSong fa-3x fa-circle-play" id="12"></i>
+                </li>
+            </div>
+        </div>
+        
+        <div class="main">
+            <nav>
+                <ul>
+                    <li>Discover <span></span></li>
+                    <li>My Library</li>
+                    <li>Radio</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search">
+                    <div class="searchResults">
+                        <!-- <a href="" class="cart">
+                            <img src="../cover/zack/angel500x500.jpg" alt="">
+                            <div class="content">
+                                Angel
+                                <div class="subtitle">
+                                    Zack Knight
+                                </div>
+                            </div>  
+                        </a>                         -->
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <h1>Arijit Singh</h1>
+                <div class="buttons">
+                    <button>PLAY</button>
+                    <button>FOLLOW</button>
+                </div>
+                <div class="artistBGPic">
+                    <img src="../artists/arijit.jpg" alt="Arijit Singh">
+                </div>
+            </div>
+
+            <div class="popularSong">
+                <div class="h4">
+                    <h4>Popular Songs</h4>
+                    <div class="btn">
+                        <i class="bi bi-arrow-left-short" id="SongLeftSlide"></i>
+                        <i class="bi bi-arrow-right-short" id="SongRightSlide"></i>
+                    </div>
+                </div>
+                <div class="popSong">
+                    <li class="songItem">
+                        <div class="imgPlay">
+                            <img src="../cover/zack/angel500x500.jpg" alt="">
+                            <i class="fa-solid playSong fa-circle-play" id="13"></i>
+                        </div>
+                        <h5>Angel<br>
+                            <div class="subtitle">Zack Knight</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="imgPlay">
+                            <img src="../cover/zack/angel500x500.jpg" alt="">
+                            <i class="fa-solid playSong fa-circle-play" id="14"></i>
+                        </div>
+                        <h5>Angel<br>
+                            <div class="subtitle">Zack Knight</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="imgPlay">
+                            <img src="../cover/zack/angel500x500.jpg" alt="">
+                            <i class="fa-solid playSong fa-circle-play" id="15"></i>
+                        </div>
+                        <h5>Angel<br>
+                            <div class="subtitle">Zack Knight</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="imgPlay">
+                            <img src="../cover/zack/angel500x500.jpg" alt="">
+                            <i class="fa-solid playSong fa-circle-play" id="16"></i>
+                        </div>
+                        <h5>Angel<br>
+                            <div class="subtitle">Zack Knight</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="imgPlay">
+                            <img src="../cover/zack/angel500x500.jpg" alt="">
+                            <i class="fa-solid playSong fa-circle-play" id="17"></i>
+                        </div>
+                        <h5>Angel<br>
+                            <div class="subtitle">Zack Knight</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="imgPlay">
+                            <img src="../cover/zack/angel500x500.jpg" alt="">
+                            <i class="fa-solid playSong fa-circle-play" id="18"></i>
+                        </div>
+                        <h5>Angel<br>
+                            <div class="subtitle">Zack Knight</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="imgPlay">
+                            <img src="../cover/zack/angel500x500.jpg" alt="">
+                            <i class="fa-solid playSong fa-circle-play" id="19"></i>
+                        </div>
+                        <h5>Angel<br>
+                            <div class="subtitle">Zack Knight</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="imgPlay">
+                            <img src="../cover/zack/angel500x500.jpg" alt="">
+                            <i class="fa-solid playSong fa-circle-play" id="20"></i>
+                        </div>
+                        <h5>Angel<br>
+                            <div class="subtitle">Zack Knight</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="imgPlay">
+                            <img src="../cover/zack/angel500x500.jpg" alt="">
+                            <i class="fa-solid playSong fa-circle-play" id="21"></i>
+                        </div>
+                        <h5>Angel<br>
+                            <div class="subtitle">Zack Knight</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="imgPlay">
+                            <img src="../cover/zack/angel500x500.jpg" alt="">
+                            <i class="fa-solid playSong fa-circle-play" id="22"></i>
+                        </div>
+                        <h5>Angel<br>
+                            <div class="subtitle">Zack Knight</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+
+            <div class="popularArtist">
+                <div class="h4">
+                    <h4>Popular Artists</h4>
+                    <div class="btn">
+                        <i class="bi bi-arrow-left-short" id="ArtistLeftSlide"></i>
+                        <i class="bi bi-arrow-right-short" id="ArtistRightSlide"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <li>
+                        <a href="index.html"><img src="../artists/zack.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="kk.html"><img src="../artists/kk.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="enrique.html"><img src="../artists/enrique.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="justin.html"><img src="../artists/justin.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="DjSnake.html"><img src="../artists/Dj-Snake.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="Badshah.html"><img src="../artists/Badshah.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="AlanWalker.html"><img src="../artists/Alan Walker.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="Guru.html"><img src="../artists/Guru.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="Martin.html"><img src="../artists/martin-garrix.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="Charlie.html"><img src="../artists/Charlie Puth.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="Irfan.html"><img src="../artists/Irfan.jpg" alt=""></a>
+                    </li>
+                </div>
+            </div>
+        </div>
+        
+        <div class="masterPlay">
+            <div class="wave">
+                <img src="../gif/giphy.gif" alt="Gif" width="62px" id="gif">
+            </div>
+            <img src="../cover/arijit/Ae Watan.jpg" alt="" id="posterMasterPlay">
+            <h5 id="title">Ae Watan<br>
+                <div class="subtitle">Arijit Singh</div>
+            </h5>
+            <div class="icon">
+                <!-- <i class="fa-solid shuffle fa-music"></i> -->
+                <i class="bi shuffle bi-music-note-beamed">next</i>
+                <i class="fa-solid fa-backward-step" id="previous"></i>
+                <i class="fa-solid fa-play" id="masterPlay"></i>
+                <i class="fa-solid fa-forward-step" id="next"></i>
+                <a href="" download="" id="downloadMusic"><i class="fa-solid fa-download"></i></a>
+                <!-- <i class="bi bi-download" id="downloadMusic"></i> -->
+            </div>
+            <span id="startTimeStamp">0:00</span>
+            <div class="seekBar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="endTimeStamp">0:30</span>
+            <div class="vol">
+                <!-- <i class="fa-solid fa-volume"></i> -->
+                <i class="bi bi-volume-up-fill" id="volIcon"></i>
+                <input type="range" id="volBar" min="0" max="100">
+                <div class="volBarVisible"></div>
+                <div class="volDot"></div>
+            </div>
+        </div>
+    </header>
+    
+</body>
+</html>

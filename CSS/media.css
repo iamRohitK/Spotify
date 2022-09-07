@@ -1,0 +1,175 @@
+@media screen and (max-width: 1270px) {
+    header {
+        width: 95%;
+        transition: .5s linear;
+    }
+    header .menuSide, .main {
+        width: 30%;
+        /* opacity: 1; */
+    }
+    .main {
+        width: 70%;
+    }
+    .main .content {
+        height: 18%;
+    }
+    .main .content .artistBGPic img {
+        top: 80px;
+        right: 23%;
+        width: 165px;
+        height: 150px;
+    }
+    .main .content .buttons {
+        margin-top: 50px;
+    }
+    header .menuSide h6 {
+        display: none;
+    }
+    .main .popularSong {
+        margin-top: 65px;
+    }
+    .main .popularArtist {
+        margin-top: 55px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    header .menuSide {
+        width: 43%;
+        position: absolute;
+        z-index: 9;
+        transition: .5s linear;
+        transform: translateX(-100%);
+    }
+    .main {
+        width: 100%;
+    }
+    .main .content .artistBGPic img {
+        right: 28%;
+        width: 180px;
+        height: 175px;
+    }
+    .masterPlay {
+        position: absolute; 
+    }
+    header .menuSide h6 {
+        /* opacity: 1; */
+        position: absolute;
+        right: -40px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+        background: #111727;
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 1s linear;
+        z-index: 999999999;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+    .main nav .search {
+        width: auto;
+    }
+    header .menuSide {
+        width: 60%;
+    }
+    .main .content .artistBGPic img {
+        top: 99px;
+        right: 25%;
+        width: 130px;
+        height: 130px;
+    }
+    .masterPlay {
+        z-index: 999;
+    }
+    .masterPlay .icon {
+        position: absolute;
+        top: -46px;
+        right: 30%;
+    }
+    .masterPlay .icon::before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 180px;
+        background: #111727;
+        z-index: -1;
+        border-radius: 50% 50% 0% 0%;
+        left: -20px;
+        box-shadow: 0px -11px 20px -17px #000;
+    }
+    .wave {
+        top: -90px;
+        width: 40px;
+        height: 40px;
+        right: 46%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .main nav ul li {
+        font-size: 12px;
+        margin-right: 13px;
+    }
+    .main nav .search {
+        width: auto;
+        display: flex;
+        width: 150px;
+        margin-right: 5px;
+    }
+    .wave {
+        right: 51%;
+    }
+    header .menuSide {
+        width: 70%;
+    }
+    .main .content .buttons {
+        margin-top: 50px;
+    }
+    .main .content .artistBGPic img {
+        top: 90px;
+        right: 21%;
+        width: 94px;
+        height: 92px;
+    }
+    .main .popularSong {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .main nav ul li {
+        font-size: 9px;
+        margin-right: 12px;
+    }
+    .main nav .search {
+        width: 130px;
+    }
+    .main .popularSong {
+        margin-top: 60px;
+    }
+    .wave {
+        right: 54%;
+    }
+    header .menuSide {
+        width: 80%;
+    }
+    .main .content .artistBGPic img {
+        top: 70px;
+        width: 66px;
+        height: 74px;
+    }
+    #posterMasterPlay {
+        margin-left: -10px;
+    }
+
+}

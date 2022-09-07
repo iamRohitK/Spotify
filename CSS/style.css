@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #121213;
+    display: grid;
+    place-items: center;
+}
+
+header {
+    position: relative; 
+    width: 85%;
+    height: 95%;
+    /* border: 1px solid #fff;  */
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+header .menuSide, 
+.main {
+    width: 25%;
+    height: 90%;
+    /* border: 1px solid #fff; */
+    background: #111727;
+    box-shadow: 5px 0px 2px #090f1f;
+    color: #fff;
+}
+
+.main {
+    width: 75%;
+    background: #0b1320;
+    overflow: auto;
+    /* border: 1px solid #fff; */
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+.masterPlay {
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid #fff; */
+    background: #111727;
+    box-shadow: 0px 3px 8px #090f1f;
+}
+
+
+/* Menu side */
+
+/* .menuSide {
+    transform: unset;
+} */
+
+.menuSide p {
+    margin: 15px 0px 0px 10px;
+}
+
+header .menuSide p img {
+    height: 60px;
+}
+
+.webName {
+    position: relative;
+    text-align:center;
+    font-size: 30px;
+    font-weight: bolder;
+    top: -20px;
+}
+
+header .menuSide h6 {
+    display: none;
+}
+
+header .menuSide h1 {
+    font-size: 23px;
+    margin: 15px 0px 0px 15px;
+    font-weight: lighter;
+}
+
+.playlist {
+    margin: 30px 0px 0px 20px;
+}
+
+.playlist h4 {
+    font-size: 15px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color:#464d61;
+    display: flex;
+    align-items: center;
+    transition: .3s linear;
+}
+
+.playlist h4:hover, :focus {
+    color: #fff;
+}
+
+/*  --------Check this later--------- */
+.playlist h4 span {
+    display: none;
+}
+
+.playlist .active {
+    color: rgb(16, 191, 191);
+}
+
+.playlist .active span {
+    display: flex;
+    /* margin-right: 20px; */
+}   
+/* ---------------------------------- */
+
+.menuSong {
+    width: 100%;
+    height: 333px;
+    /* border: 1px solid #fff; */
+    margin-top: 12px;
+    overflow: auto;
+}
+
+.menuSong::-webkit-scrollbar {
+    display: none;
+}
+
+.menuSong li {
+    list-style-type: none;
+    position: relative;
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 2px; */
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.menuSong li:hover {
+    background: rgb(105, 105, 105, .2);
+}
+
+.menuSong li span {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4c5262;
+    /* border: 1px solid #fff; */
+}
+
+.menuSong li img {
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+}
+
+.menuSong li h5 {
+    font-size: 11px;
+    margin-left: 10px;
+    width: 170px;
+    height: 30px;
+    /* border: 1px solid #fff; */
+    text-overflow: ellipsis;
+    /* Both of the following properties are required for text-overflow: */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menuSong li h5 .subtitle {
+    /* border: 1px solid #fff; */
+    /* width: 100%; */
+    font-size: 9px;
+    color: #65708b;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menuSong li .playSong {
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+}
+
+
+/* Masterplay */
+
+.masterPlay {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #fff; */
+    padding: 0px 20px;
+}
+
+.wave {
+    position: absolute;
+    /* left: 9vw; */
+    /* font-family: 'Varela Round', sans-serif; */
+}
+
+.wave img {
+    opacity: 0;
+    /* border: 1px solid #fff; */
+    transition: opacity 0.4s ease-in-out;
+}
+
+#posterMasterPlay {
+    width: 35px;
+    height: 35px;
+    margin-left: 65px;
+}
+
+.masterPlay h5 {
+    width: 130px;
+    /* border: 1px solid #fff; */
+    font-size: 13px;
+    /* margin-top: 8px; */
+    margin-left: 10px;
+    line-height: 17px;
+    color: #fff;
+    text-overflow: ellipsis;
+    /* Both of the following properties are required for text-overflow: */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.masterPlay h5 .subtitle {
+    /* margin-top: 3px; */
+    /* border: 1px solid #fff; */
+    font-size: 9px;
+    width: 100%;
+    color: #65708b;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.masterPlay .icon {
+    /* font-size: 20px; */
+    color: #fff;
+    margin: 0px 20px 0px 15px;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+.icon i {
+    cursor: pointer;
+    outline: none;
+    padding: 8px;
+}
+
+.icon .shuffle {
+    font-size: 17px;
+    margin-right: 10px;
+    width: 26px;
+    /* border: 1px solid #fff; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.icon #downloadMusic {
+    text-decoration: none;
+    color: #fff;
+    /* font-size: 20px;     */
+    /* margin-left: 10px;   // not needed (comment this) */
+}
+
+.icon i:nth-child(3) {
+    border: 1px solid rgb(105, 105, 105, .2);
+    border-radius: 50%;
+    padding: 5px 5px 5px 7px;
+    margin: 0px 5px;
+}
+
+.masterPlay span {
+    color: #fff;
+    width: 32px;
+    /* border: 1px solid #fff; */
+    font-size: 11px;
+    font-weight: 400;
+}
+
+#startTimeStamp {
+    margin: 0px 0px 0px 20px;
+}
+
+.seekBar {
+    position: relative;
+    width: 43%;
+    height: 2px;
+    cursor: pointer;
+    background: rgb(105, 105, 170, .2);
+    margin: 0px 15px 0px 10px;
+}
+
+.bar2 {
+    position: absolute;
+    background: rgb(16, 191, 191);
+    width: 0%;
+    height: 100%;
+    top: 0; 
+    transition: 1s linear;
+}
+
+.dot {
+    position: absolute;
+    background: rgb(16, 191, 191);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: -1.5px;
+    left: 0%;
+    transition: 1s linear;
+}
+
+.dot::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(16, 191, 191);
+    border-radius: 50%;
+    left: -6.5px;
+    top: -6px;
+    box-shadow: inset 0px 0px 4px rgb(16, 191, 191);
+}
+
+.seekBar input {
+    position: absolute;
+    width: 100%;
+    top: -7px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+
+.masterPlay .vol {
+    position: relative;
+    width: 100px;
+    height: 2px;
+    margin-left: 50px;
+    background: rgb(105, 105, 170, .2);
+}
+
+.vol i {
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    top: -17px;
+    left: -30px;
+}
+
+.vol input {
+    position: absolute;
+    width: 100%;
+    top: -7px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+
+.volBarVisible {
+    position: absolute;
+    background: rgb(16, 191, 191);
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    transition: 0.5s linear;
+}
+
+.volDot {
+    position: absolute;
+    background: rgb(16, 191, 191);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: -1.5px;
+    left: 100%;
+    transition: 0.5s linear;
+}
+
+.volDot::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(16, 191, 191);
+    border-radius: 50%;
+    left: -6.5px;
+    top: -7px;
+    box-shadow: inset 0px 0px 4px rgb(16, 191, 191);   
+}
+
+
+/* Main (main content) */
+
+.main {
+    z-index: 2;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 285px;
+    /* background-image: url("artists/zack.jpg"); */
+    /* border: 1px solid #fff; */
+    z-index: -1;
+}
+
+.main nav {
+    width: 90%;
+    height: 10%;
+    /* border: 1px solid #fff; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main nav ul {
+    display: flex;
+}
+
+.main nav ul li{
+    list-style-type: none;
+    position: relative;
+    font-size: 13px;
+    color: #4c5262;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.main nav ul li:hover,
+:focus{
+    color: #fff;
+}
+
+.main nav ul li:nth-child(1){
+    color: #fff;
+}
+
+.main nav ul li span{
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    background: rgb(16, 191, 191);
+    bottom: -5px;
+    left: 0px;
+    border-radius: 20px;
+}
+
+.main nav .search{
+    position: relative;
+    width: 40%;
+    padding: 1px 10px;
+    border-radius: 20px;
+    /* border: 1px solid #fff; */
+    color: gray;
+}
+
+.main nav .search::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(184, 184, 184, .1);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+.main nav .searchResults{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid #fff; */
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.main nav .searchResults::-webkit-scrollbar{
+    display: none;
+}
+
+.main nav .searchResults .cart{
+    width: 100%;
+    height: 45px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: rgb(184, 184, 184, .1);
+    margin-bottom: 5px;
+    text-decoration: none;
+    display: none;
+}
+
+.main nav .searchResults .cart img{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.main nav .searchResults .cart .content{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    padding: 0;
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.main nav .searchResults .cart .content .subtitle{
+    font-size: 11px;
+    font-weight: 500;
+    color: #a4a8b4;
+}
+
+.main nav .search i{
+    font-size: 13px;
+    padding: 3px 0px 0px 10px;
+}
+
+.main nav .search input{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.main .content {
+    width: 90%;
+    height: 35%;
+    /* border: 1px solid #fff; */
+    margin: auto;
+    padding-top: 20px;
+}
+
+.main .content h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.main .content .buttons {
+    margin-top: 45px;
+}
+
+.main .content .buttons button {
+    width: 110px;
+    height: 30px;
+    border: 2px solid rgb(16, 191, 191);
+    outline: none;
+    border-radius: 20px;
+    background: #5adae0;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.main .content .buttons button:hover, button:focus {
+    background: none;
+    color: rgb(16, 191, 191);
+}
+
+/* Comment this if does not looks good  */
+.main .content .buttons button:nth-child(2){
+    background: none;
+    color: rgb(16, 191, 191);
+}
+
+.main .content .buttons button:nth-child(2):hover{
+    background: none;
+    color: #fff;
+}
+/* ------------------------------------- */
+
+/* .main .content .artistBGPic {
+    position: absolute;
+} */
+
+.main .content .artistBGPic img {
+    position: absolute;
+    top: 70px;
+    right: 30%;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.main .popularSong {
+    /* border: 1px solid #fff; */
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.main .popularSong .h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .popularSong .h4 .bi{
+    color: #a4a8b4;
+    cursor: pointer;
+    transform: .3s linear;
+}
+
+.main .popularSong .h4 .bi:hover{
+    color: #fff;
+}
+
+.main .popularSong .popSong {
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid #fff; */
+    margin-top: 15px;
+    /* padding-right: 15px; */
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.main .popularSong .popSong::-webkit-scrollbar {
+    display: none;
+}
+
+.main .popularSong .popSong li {
+    min-width: 100px;
+    height: 140px;
+    list-style-type: none;
+    margin-right: 13px;
+    transition: .3s linear;
+    /* border: 1px solid #fff; */
+}
+
+.main .popularSong .popSong li:hover, li:focus {
+    background: rgb(105, 105, 170, .2);
+}
+
+.main .popularSong .popSong li .imgPlay {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .popularSong .popSong li .imgPlay img { 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.main .popularSong .popSong li .imgPlay .playSong { 
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s linear;
+    opacity: 0;
+}
+
+.main .popularSong .popSong li:hover .imgPlay .playSong { 
+    opacity: 1;
+}
+
+.main .popularSong .popSong li h5 { 
+    padding: 5px 0px 0px 5px;
+    font-size: 10px;
+    line-height: 15px;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.main .popularSong .popSong li h5 .subtitle { 
+    font-size: 9px;
+    color: #65708b;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.main .popularArtist {
+    /* border: 1px solid #fff; */
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.main .popularArtist .h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .popularArtist .h4 .bi{
+    color: #a4a8b4;
+    cursor: pointer;
+    transform: .3s linear;
+}
+
+.main .popularArtist .h4 .bi:hover{
+    color: #fff;
+}
+
+.main .popularArtist .item{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #fff; */
+    margin-top: 15px;
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.main .popularArtist .item li{
+    list-style-type: none;
+    position: relative;
+    /* min-width: 80px;  */
+    height: 88px;
+    border-radius: 50%;
+    margin-right: 15px;
+    /* padding: 0px 12px; */
+    cursor: pointer;
+}
+
+/* .main .popularArtist .item li:hover, li:focus {
+    background: rgb(105, 105, 170, .2);
+} */
+
+.main .popularArtist .item::-webkit-scrollbar{
+    display: none;
+}
+
+.main .popularArtist .item li img{
+    /* width: 100%;
+    height: 100%; */
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
