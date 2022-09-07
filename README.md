@@ -16,10 +16,7 @@
 
 ## Preview
 
-<<<<<<< HEAD
-=======
 ![image](https://user-images.githubusercontent.com/103317021/188898027-01fa93f0-105b-41b6-a0b1-bd4da1da21fd.png)
->>>>>>> d63b690f3d69adef8061d42ad866ea757648bde3
 
 ## Technologies used in this project
 
