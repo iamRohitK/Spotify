@@ -25,4 +25,4 @@
 * JavaScript
 
 ## To see it working live
-Visit here: rk-spotify-musicplayer.netlify.app
+**Visit here:** [Live Server](https://rk-spotify-musicplayer.netlify.app)
