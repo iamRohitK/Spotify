@@ -23,3 +23,6 @@
 * HTML
 * CSS
 * JavaScript
+
+## To see it working live
+# Visit here: [![Netlify Status](https://api.netlify.com/api/v1/badges/836c0dab-7014-406f-b79a-c1e04af7f452/deploy-status)](https://app.netlify.com/sites/rk-spotify-musicplayer/deploys)
